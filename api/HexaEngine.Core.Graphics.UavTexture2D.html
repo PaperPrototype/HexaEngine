@@ -1,0 +1,930 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UavTexture2D </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UavTexture2D ">
+      
+      <meta name="description" content="[Obsolete] Use Texture2D instead with UA flag">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/HexaEngine/HexaEngine/new/main/apiSpec/new?filename=HexaEngine_Core_Graphics_UavTexture2D.md&amp;value=---%0Auid%3A%20HexaEngine.Core.Graphics.UavTexture2D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="HexaEngine.Core.Graphics.UavTexture2D">
+
+
+
+  <h1 id="HexaEngine_Core_Graphics_UavTexture2D" data-uid="HexaEngine.Core.Graphics.UavTexture2D" class="text-break">
+Class UavTexture2D  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="HexaEngine.html">HexaEngine</a>.<a class="xref" href="HexaEngine.Core.html">Core</a>.<a class="xref" href="HexaEngine.Core.Graphics.html">Graphics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HexaEngine.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Texture2D instead with UA flag&quot;)]
+public class UavTexture2D : ITexture2D, IResource, IDeviceChild, INative, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UavTexture2D</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="HexaEngine.Core.Graphics.ITexture2D.html">ITexture2D</a></div>
+      <div><a class="xref" href="HexaEngine.Core.Graphics.IResource.html">IResource</a></div>
+      <div><a class="xref" href="HexaEngine.Core.Graphics.IDeviceChild.html">IDeviceChild</a></div>
+      <div><a class="xref" href="HexaEngine.Core.Unsafes.INative.html">INative</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D__ctor_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D__ctor_HexaEngine_Core_Graphics_IGraphicsDevice_HexaEngine_Core_Graphics_Format_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_HexaEngine_Core_Graphics_ResourceMiscFlag_System_String_System_Int32_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.#ctor(HexaEngine.Core.Graphics.IGraphicsDevice,HexaEngine.Core.Graphics.Format,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,HexaEngine.Core.Graphics.ResourceMiscFlag,System.String,System.Int32)">
+  UavTexture2D(IGraphicsDevice, Format, int, int, int, int, bool, bool, ResourceMiscFlag, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UavTexture2D(IGraphicsDevice device, Format format, int width, int height, int arraySize, int mipLevels, bool isSRV, bool isRTV, ResourceMiscFlag miscFlag = ResourceMiscFlag.None, string filename = &quot;&quot;, int lineNumber = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>device</code> <a class="xref" href="HexaEngine.Core.Graphics.IGraphicsDevice.html">IGraphicsDevice</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>mipLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isSRV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isRTV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>miscFlag</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd></dd>
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>lineNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_ArraySize_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.ArraySize*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_ArraySize" data-uid="HexaEngine.Core.Graphics.UavTexture2D.ArraySize">
+  ArraySize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ArraySize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_DebugName_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.DebugName*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_DebugName" data-uid="HexaEngine.Core.Graphics.UavTexture2D.DebugName">
+  DebugName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DebugName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Description_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Description*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Description" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2DDescription Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.Texture2DDescription.html">Texture2DDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Dimension_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dimension*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Dimension" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dimension">
+  Dimension
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceDimension Dimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.ResourceDimension.html">ResourceDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Format_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Format*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Format" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Format">
+  Format
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Format Format { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Height_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Height*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Height" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_IsDisposed_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.IsDisposed*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_IsDisposed" data-uid="HexaEngine.Core.Graphics.UavTexture2D.IsDisposed">
+  IsDisposed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_MipLevels_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.MipLevels*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_MipLevels" data-uid="HexaEngine.Core.Graphics.UavTexture2D.MipLevels">
+  MipLevels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MipLevels { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_MiscFlag_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.MiscFlag*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_MiscFlag" data-uid="HexaEngine.Core.Graphics.UavTexture2D.MiscFlag">
+  MiscFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceMiscFlag MiscFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_NativePointer_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.NativePointer*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_NativePointer" data-uid="HexaEngine.Core.Graphics.UavTexture2D.NativePointer">
+  NativePointer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint NativePointer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_RTV_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.RTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_RTV" data-uid="HexaEngine.Core.Graphics.UavTexture2D.RTV">
+  RTV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRenderTargetView? RTV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.IRenderTargetView.html">IRenderTargetView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_SRV_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.SRV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_SRV" data-uid="HexaEngine.Core.Graphics.UavTexture2D.SRV">
+  SRV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IShaderResourceView? SRV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.IShaderResourceView.html">IShaderResourceView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_UAV_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.UAV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_UAV" data-uid="HexaEngine.Core.Graphics.UavTexture2D.UAV">
+  UAV
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUnorderedAccessView? UAV { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.IUnorderedAccessView.html">IUnorderedAccessView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Viewport_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Viewport*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Viewport" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Viewport">
+  Viewport
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Viewport Viewport { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Mathematics.Viewport.html">Viewport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Width_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Width*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Width" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_CopyTo_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.CopyTo*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_CopyTo_HexaEngine_Core_Graphics_IGraphicsContext_HexaEngine_Core_Graphics_ITexture2D_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.CopyTo(HexaEngine.Core.Graphics.IGraphicsContext,HexaEngine.Core.Graphics.ITexture2D)">
+  CopyTo(IGraphicsContext, ITexture2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(IGraphicsContext context, ITexture2D texture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="HexaEngine.Core.Graphics.IGraphicsContext.html">IGraphicsContext</a></dt>
+    <dd></dd>
+    <dt><code>texture</code> <a class="xref" href="HexaEngine.Core.Graphics.ITexture2D.html">ITexture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Dispose_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dispose*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Dispose" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Dispose_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dispose*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Dispose_System_Boolean_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Finalize_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Finalize*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Finalize" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Finalize">
+  ~UavTexture2D()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~UavTexture2D()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_UavTexture2D_Resize_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Resize*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_Resize_HexaEngine_Core_Graphics_IGraphicsDevice_HexaEngine_Core_Graphics_Format_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.UavTexture2D.Resize(HexaEngine.Core.Graphics.IGraphicsDevice,HexaEngine.Core.Graphics.Format,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  Resize(IGraphicsDevice, Format, int, int, int, int, bool, bool, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resize(IGraphicsDevice device, Format format, int width, int height, int arraySize, int mipLevels, bool isSRV, bool isRTV, ResourceMiscFlag miscFlag = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>device</code> <a class="xref" href="HexaEngine.Core.Graphics.IGraphicsDevice.html">IGraphicsDevice</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>mipLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isSRV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isRTV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>miscFlag</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_UavTexture2D_OnDisposed" data-uid="HexaEngine.Core.Graphics.UavTexture2D.OnDisposed">
+  OnDisposed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Obsolete] Use Texture2D instead with UA flag</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? OnDisposed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/UavTexture2D.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

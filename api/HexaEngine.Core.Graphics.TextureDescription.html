@@ -1,0 +1,1867 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct TextureDescription </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct TextureDescription ">
+      
+      <meta name="description" content="Describes a texture.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/HexaEngine/HexaEngine/new/main/apiSpec/new?filename=HexaEngine_Core_Graphics_TextureDescription.md&amp;value=---%0Auid%3A%20HexaEngine.Core.Graphics.TextureDescription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="HexaEngine.Core.Graphics.TextureDescription">
+
+
+
+  <h1 id="HexaEngine_Core_Graphics_TextureDescription" data-uid="HexaEngine.Core.Graphics.TextureDescription" class="text-break">
+Struct TextureDescription  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="HexaEngine.html">HexaEngine</a>.<a class="xref" href="HexaEngine.Core.html">Core</a>.<a class="xref" href="HexaEngine.Core.Graphics.html">Graphics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HexaEngine.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Describes a texture.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct TextureDescription : IEquatable&lt;TextureDescription&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="HexaEngine.Core.Utils.html#HexaEngine_Core_Utils_CopyTo__1___0_System_Int32__System_Byte__">Utils.CopyTo&lt;T&gt;(T, int*, byte*)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription__ctor_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription__ctor_HexaEngine_Core_Graphics_IResource_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor(HexaEngine.Core.Graphics.IResource)">
+  TextureDescription(IResource)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDescription(IResource resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="HexaEngine.Core.Graphics.IResource.html">IResource</a></dt>
+    <dd><p>The resource.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Unknown ressource type - resource
+or
+Buffers cannot be used as a texture - resource</p>
+</dd>
+  </dl>
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription__ctor_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription__ctor_HexaEngine_Core_Graphics_TextureDimension_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor(HexaEngine.Core.Graphics.TextureDimension,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  TextureDescription(TextureDimension, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDescription(TextureDimension dimension, int width, int height, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cPUAccessFlags = CpuAccessFlags.None, ResourceMiscFlag miscFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDimension.html">TextureDimension</a></dt>
+    <dd><p>The dimension.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cPUAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The c pu access flags.</p>
+</dd>
+    <dt><code>miscFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The misc flags.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription__ctor_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription__ctor_HexaEngine_Core_Graphics_TextureDimension_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor(HexaEngine.Core.Graphics.TextureDimension,System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  TextureDescription(TextureDimension, int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDescription(TextureDimension dimension, int width, int height, int depth, int mipLevels, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cPUAccessFlags = CpuAccessFlags.None, ResourceMiscFlag miscFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDimension.html">TextureDimension</a></dt>
+    <dd><p>The dimension.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth.</p>
+</dd>
+    <dt><code>mipLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mip levels.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cPUAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The c pu access flags.</p>
+</dd>
+    <dt><code>miscFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The misc flags.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription__ctor_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription__ctor_HexaEngine_Core_Graphics_TextureDimension_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor(HexaEngine.Core.Graphics.TextureDimension,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  TextureDescription(TextureDimension, int, int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDescription(TextureDimension dimension, int width, int height, int depth, int arraySize, int mipLevels, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cPUAccessFlags = CpuAccessFlags.None, ResourceMiscFlag miscFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDimension.html">TextureDimension</a></dt>
+    <dd><p>The dimension.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mipLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mip levels.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cPUAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The c pu access flags.</p>
+</dd>
+    <dt><code>miscFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The misc flags.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription__ctor_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription__ctor_HexaEngine_Core_Graphics_TextureDimension_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_SampleDescription_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.#ctor(HexaEngine.Core.Graphics.TextureDimension,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.SampleDescription,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  TextureDescription(TextureDimension, int, int, int, int, int, SampleDescription, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDescription(TextureDimension dimension, int width, int height, int depth, int arraySize, int mipLevels, SampleDescription sampleDescription, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cPUAccessFlags = CpuAccessFlags.None, ResourceMiscFlag miscFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dimension</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDimension.html">TextureDimension</a></dt>
+    <dd><p>The dimension.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mipLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mip levels.</p>
+</dd>
+    <dt><code>sampleDescription</code> <a class="xref" href="HexaEngine.Core.Graphics.SampleDescription.html">SampleDescription</a></dt>
+    <dd><p>The sample description.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cPUAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The c pu access flags.</p>
+</dd>
+    <dt><code>miscFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The misc flags.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_ArraySize" data-uid="HexaEngine.Core.Graphics.TextureDescription.ArraySize">
+  ArraySize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The size of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ArraySize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_BindFlags" data-uid="HexaEngine.Core.Graphics.TextureDescription.BindFlags">
+  BindFlags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The bind flags of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BindFlags BindFlags</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CPUAccessFlags" data-uid="HexaEngine.Core.Graphics.TextureDescription.CPUAccessFlags">
+  CPUAccessFlags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The CPU access flags of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CpuAccessFlags CPUAccessFlags</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Depth" data-uid="HexaEngine.Core.Graphics.TextureDescription.Depth">
+  Depth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The depth of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Depth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Dimension" data-uid="HexaEngine.Core.Graphics.TextureDescription.Dimension">
+  Dimension
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dimension of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureDimension Dimension</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDimension.html">TextureDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Format" data-uid="HexaEngine.Core.Graphics.TextureDescription.Format">
+  Format
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The format of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Format Format</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Height" data-uid="HexaEngine.Core.Graphics.TextureDescription.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The height of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_MipLevels" data-uid="HexaEngine.Core.Graphics.TextureDescription.MipLevels">
+  MipLevels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of mip levels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MipLevels</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_MiscFlags" data-uid="HexaEngine.Core.Graphics.TextureDescription.MiscFlags">
+  MiscFlags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The miscellaneous flags of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceMiscFlag MiscFlags</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_SampleDescription" data-uid="HexaEngine.Core.Graphics.TextureDescription.SampleDescription">
+  SampleDescription
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sample description of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleDescription SampleDescription</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.SampleDescription.html">SampleDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Usage" data-uid="HexaEngine.Core.Graphics.TextureDescription.Usage">
+  Usage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The usage of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Usage Usage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Width" data-uid="HexaEngine.Core.Graphics.TextureDescription.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The width of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1D_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1D*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1D_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1D(System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture1D(int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture1D description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture1D(int width, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DArray_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DArray*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DArray_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DArray(System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture1DArray(int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture1DArray description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture1DArray(int width, int arraySize, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DArrayWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DArrayWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DArrayWithRTV_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DArrayWithRTV(System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture1DArrayWithRTV(int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture1DArray description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture1DArrayWithRTV(int width, int arraySize, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture1DWithRTV_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture1DWithRTV(System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture1DWithRTV(int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture1D description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture1DWithRTV(int width, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2D_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2D*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2D_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2D(System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture2D(int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture2D description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture2D(int width, int height, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DArray_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DArray*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DArray_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DArray(System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture2DArray(int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture2DArray description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture2DArray(int width, int height, int arraySize, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DArrayWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DArrayWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DArrayWithRTV_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DArrayWithRTV(System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture2DArrayWithRTV(int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture2DArray description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture2DArrayWithRTV(int width, int height, int arraySize, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>arraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of the array.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture2DWithRTV_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture2DWithRTV(System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture2DWithRTV(int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture2D description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture2DWithRTV(int width, int height, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture3D_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture3D*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture3D_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture3D(System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture3D(int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture3D description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture3D(int width, int height, int depth, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture3DWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture3DWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTexture3DWithRTV_System_Int32_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTexture3DWithRTV(System.Int32,System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTexture3DWithRTV(int, int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an Texture3D description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTexture3DWithRTV(int width, int height, int depth, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height.</p>
+</dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The depth.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCube_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCube*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCube_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCube(System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTextureCube(int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an TextureCube description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTextureCube(int width, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.TextureCube)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCubeArrayWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCubeArrayWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCubeArrayWithRTV_System_Int32_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCubeArrayWithRTV(System.Int32,System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTextureCubeArrayWithRTV(int, int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an TextureCubeArray description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTextureCubeArrayWithRTV(int width, int size, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.TextureCube)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The size.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCubeWithRTV_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCubeWithRTV*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_CreateTextureCubeWithRTV_System_Int32_System_Int32_HexaEngine_Core_Graphics_Format_HexaEngine_Core_Graphics_Usage_HexaEngine_Core_Graphics_BindFlags_HexaEngine_Core_Graphics_CpuAccessFlags_HexaEngine_Core_Graphics_ResourceMiscFlag_" data-uid="HexaEngine.Core.Graphics.TextureDescription.CreateTextureCubeWithRTV(System.Int32,System.Int32,HexaEngine.Core.Graphics.Format,HexaEngine.Core.Graphics.Usage,HexaEngine.Core.Graphics.BindFlags,HexaEngine.Core.Graphics.CpuAccessFlags,HexaEngine.Core.Graphics.ResourceMiscFlag)">
+  CreateTextureCubeWithRTV(int, int, Format, Usage, BindFlags, CpuAccessFlags, ResourceMiscFlag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an TextureCube description with an RTV.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextureDescription CreateTextureCubeWithRTV(int width, int mips, Format format, Usage usage = Usage.Default, BindFlags bindFlags = BindFlags.ShaderResource | BindFlags.RenderTarget, CpuAccessFlags cpuAccessFlags = CpuAccessFlags.None, ResourceMiscFlag resourceOptionFlags = ResourceMiscFlag.TextureCube)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width.</p>
+</dd>
+    <dt><code>mips</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The mips.</p>
+</dd>
+    <dt><code>format</code> <a class="xref" href="HexaEngine.Core.Graphics.Format.html">Format</a></dt>
+    <dd><p>The format.</p>
+</dd>
+    <dt><code>usage</code> <a class="xref" href="HexaEngine.Core.Graphics.Usage.html">Usage</a></dt>
+    <dd><p>The usage.</p>
+</dd>
+    <dt><code>bindFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.BindFlags.html">BindFlags</a></dt>
+    <dd><p>The bind flags.</p>
+</dd>
+    <dt><code>cpuAccessFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.CpuAccessFlags.html">CpuAccessFlags</a></dt>
+    <dd><p>The cpu access flags.</p>
+</dd>
+    <dt><code>resourceOptionFlags</code> <a class="xref" href="HexaEngine.Core.Graphics.ResourceMiscFlag.html">ResourceMiscFlag</a></dt>
+    <dd><p>The resource option flags.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_Equals_" data-uid="HexaEngine.Core.Graphics.TextureDescription.Equals*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Equals_HexaEngine_Core_Graphics_TextureDescription_" data-uid="HexaEngine.Core.Graphics.TextureDescription.Equals(HexaEngine.Core.Graphics.TextureDescription)">
+  Equals(TextureDescription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(TextureDescription other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the  parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_Equals_" data-uid="HexaEngine.Core.Graphics.TextureDescription.Equals*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_Equals_System_Object_" data-uid="HexaEngine.Core.Graphics.TextureDescription.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if  and this instance are the same type and represent the same _value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_GetDepthStencilViewDimension_" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetDepthStencilViewDimension*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_GetDepthStencilViewDimension" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetDepthStencilViewDimension">
+  GetDepthStencilViewDimension()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the depth stencil view dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DepthStencilViewDimension GetDepthStencilViewDimension()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Core.Graphics.DepthStencilViewDimension.html">DepthStencilViewDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_GetHashCode_" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetHashCode*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_GetHashCode" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_GetViewport_" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetViewport*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_GetViewport" data-uid="HexaEngine.Core.Graphics.TextureDescription.GetViewport">
+  GetViewport()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the viewport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Viewport GetViewport()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Mathematics.Viewport.html">Viewport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_op_Equality_" data-uid="HexaEngine.Core.Graphics.TextureDescription.op_Equality*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_op_Equality_HexaEngine_Core_Graphics_TextureDescription_HexaEngine_Core_Graphics_TextureDescription_" data-uid="HexaEngine.Core.Graphics.TextureDescription.op_Equality(HexaEngine.Core.Graphics.TextureDescription,HexaEngine.Core.Graphics.TextureDescription)">
+  operator ==(TextureDescription, TextureDescription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator ==.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TextureDescription left, TextureDescription right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd><p>The left.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd><p>The right.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Core_Graphics_TextureDescription_op_Inequality_" data-uid="HexaEngine.Core.Graphics.TextureDescription.op_Inequality*"></a>
+
+  <h3 id="HexaEngine_Core_Graphics_TextureDescription_op_Inequality_HexaEngine_Core_Graphics_TextureDescription_HexaEngine_Core_Graphics_TextureDescription_" data-uid="HexaEngine.Core.Graphics.TextureDescription.op_Inequality(HexaEngine.Core.Graphics.TextureDescription,HexaEngine.Core.Graphics.TextureDescription)">
+  operator !=(TextureDescription, TextureDescription)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implements the operator !=.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TextureDescription left, TextureDescription right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd><p>The left.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="HexaEngine.Core.Graphics.TextureDescription.html">TextureDescription</a></dt>
+    <dd><p>The right.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the operator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine.Core/Graphics/TextureDescription.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

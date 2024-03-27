@@ -1,0 +1,1273 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CharacterController </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CharacterController ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/HexaEngine/HexaEngine/new/main/apiSpec/new?filename=HexaEngine_Components_Physics_CharacterController.md&amp;value=---%0Auid%3A%20HexaEngine.Components.Physics.CharacterController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="HexaEngine.Components.Physics.CharacterController">
+
+
+
+  <h1 id="HexaEngine_Components_Physics_CharacterController" data-uid="HexaEngine.Components.Physics.CharacterController" class="text-break">
+Class CharacterController  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="HexaEngine.html">HexaEngine</a>.<a class="xref" href="HexaEngine.Components.html">Components</a>.<a class="xref" href="HexaEngine.Components.Physics.html">Physics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HexaEngine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorCategory(&quot;Physics&quot;, null)]
+[EditorComponent&lt;CharacterController&gt;(&quot;Character Controller&quot;)]
+public class CharacterController : ICharacterControllerComponent, IComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CharacterController</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="HexaEngine.Physics.ICharacterControllerComponent.html">ICharacterControllerComponent</a></div>
+      <div><a class="xref" href="HexaEngine.Scenes.IComponent.html">IComponent</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_material" data-uid="HexaEngine.Components.Physics.CharacterController.material">
+  material
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PxMaterial* material</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PxMaterial</span>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_BoxDepth_" data-uid="HexaEngine.Components.Physics.CharacterController.BoxDepth*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_BoxDepth" data-uid="HexaEngine.Components.Physics.CharacterController.BoxDepth">
+  BoxDepth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsBox&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Box&quot;, null)]
+[EditorProperty(&quot;Depth&quot;, EditorPropertyMode.Default)]
+public float BoxDepth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_BoxHeight_" data-uid="HexaEngine.Components.Physics.CharacterController.BoxHeight*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_BoxHeight" data-uid="HexaEngine.Components.Physics.CharacterController.BoxHeight">
+  BoxHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsBox&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Box&quot;, null)]
+[EditorProperty(&quot;Height&quot;, EditorPropertyMode.Default)]
+public float BoxHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_BoxWidth_" data-uid="HexaEngine.Components.Physics.CharacterController.BoxWidth*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_BoxWidth" data-uid="HexaEngine.Components.Physics.CharacterController.BoxWidth">
+  BoxWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsBox&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Box&quot;, null)]
+[EditorProperty(&quot;Width&quot;, EditorPropertyMode.Default)]
+public float BoxWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_CapsuleClimbingMode_" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleClimbingMode*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_CapsuleClimbingMode" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleClimbingMode">
+  CapsuleClimbingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsCapsule&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Capsule&quot;, null)]
+[EditorProperty&lt;CapsuleClimbingMode&gt;(&quot;Capsule Climbing Mode&quot;)]
+public CapsuleClimbingMode CapsuleClimbingMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Physics.CapsuleClimbingMode.html">CapsuleClimbingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_CapsuleHeight_" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleHeight*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_CapsuleHeight" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleHeight">
+  CapsuleHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsCapsule&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Capsule&quot;, null)]
+[EditorProperty(&quot;Height&quot;, EditorPropertyMode.Default)]
+public float CapsuleHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_CapsuleRadius_" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleRadius*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_CapsuleRadius" data-uid="HexaEngine.Components.Physics.CharacterController.CapsuleRadius">
+  CapsuleRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorPropertyCondition&lt;CharacterController&gt;(&quot;IsCapsule&quot;, EditorPropertyConditionMode.Visible)]
+[EditorCategory(&quot;Capsule&quot;, null)]
+[EditorProperty(&quot;Radius&quot;, EditorPropertyMode.Default)]
+public float CapsuleRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_ContactOffset_" data-uid="HexaEngine.Components.Physics.CharacterController.ContactOffset*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_ContactOffset" data-uid="HexaEngine.Components.Physics.CharacterController.ContactOffset">
+  ContactOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Contact Offset&quot;, EditorPropertyMode.Default)]
+public float ContactOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Density_" data-uid="HexaEngine.Components.Physics.CharacterController.Density*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Density" data-uid="HexaEngine.Components.Physics.CharacterController.Density">
+  Density
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Density&quot;, EditorPropertyMode.Default)]
+public float Density { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_DynamicFriction_" data-uid="HexaEngine.Components.Physics.CharacterController.DynamicFriction*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_DynamicFriction" data-uid="HexaEngine.Components.Physics.CharacterController.DynamicFriction">
+  DynamicFriction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Dynamic Friction&quot;, EditorPropertyMode.Default)]
+public float DynamicFriction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_FootPosition_" data-uid="HexaEngine.Components.Physics.CharacterController.FootPosition*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_FootPosition" data-uid="HexaEngine.Components.Physics.CharacterController.FootPosition">
+  FootPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Vector3D FootPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_GameObject_" data-uid="HexaEngine.Components.Physics.CharacterController.GameObject*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_GameObject" data-uid="HexaEngine.Components.Physics.CharacterController.GameObject">
+  GameObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public GameObject GameObject { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Scenes.GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_InvisibleWallHeight_" data-uid="HexaEngine.Components.Physics.CharacterController.InvisibleWallHeight*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_InvisibleWallHeight" data-uid="HexaEngine.Components.Physics.CharacterController.InvisibleWallHeight">
+  InvisibleWallHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Invisible Wall Height&quot;, EditorPropertyMode.Default)]
+public float InvisibleWallHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_MaxJumpHeight_" data-uid="HexaEngine.Components.Physics.CharacterController.MaxJumpHeight*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_MaxJumpHeight" data-uid="HexaEngine.Components.Physics.CharacterController.MaxJumpHeight">
+  MaxJumpHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Max Jump Height&quot;, EditorPropertyMode.Default)]
+public float MaxJumpHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_NonWalkableMode_" data-uid="HexaEngine.Components.Physics.CharacterController.NonWalkableMode*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_NonWalkableMode" data-uid="HexaEngine.Components.Physics.CharacterController.NonWalkableMode">
+  NonWalkableMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty&lt;ControllerNonWalkableMode&gt;(&quot;Non Walkable Mode&quot;)]
+public ControllerNonWalkableMode NonWalkableMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Physics.ControllerNonWalkableMode.html">ControllerNonWalkableMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Position_" data-uid="HexaEngine.Components.Physics.CharacterController.Position*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Position" data-uid="HexaEngine.Components.Physics.CharacterController.Position">
+  Position
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Vector3D Position { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Mathematics.Vector3D.html">Vector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Restitution_" data-uid="HexaEngine.Components.Physics.CharacterController.Restitution*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Restitution" data-uid="HexaEngine.Components.Physics.CharacterController.Restitution">
+  Restitution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Restitution&quot;, EditorPropertyMode.Default)]
+public float Restitution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_ScaleCoeff_" data-uid="HexaEngine.Components.Physics.CharacterController.ScaleCoeff*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_ScaleCoeff" data-uid="HexaEngine.Components.Physics.CharacterController.ScaleCoeff">
+  ScaleCoeff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Scale Coeff&quot;, EditorPropertyMode.Default)]
+public float ScaleCoeff { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Shape_" data-uid="HexaEngine.Components.Physics.CharacterController.Shape*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Shape" data-uid="HexaEngine.Components.Physics.CharacterController.Shape">
+  Shape
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty&lt;CharacterControllerShape&gt;(&quot;Shape&quot;)]
+public CharacterControllerShape Shape { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HexaEngine.Physics.CharacterControllerShape.html">CharacterControllerShape</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_SlopeLimit_" data-uid="HexaEngine.Components.Physics.CharacterController.SlopeLimit*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_SlopeLimit" data-uid="HexaEngine.Components.Physics.CharacterController.SlopeLimit">
+  SlopeLimit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Slope Limit&quot;, EditorPropertyMode.Default)]
+public float SlopeLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_StaticFriction_" data-uid="HexaEngine.Components.Physics.CharacterController.StaticFriction*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_StaticFriction" data-uid="HexaEngine.Components.Physics.CharacterController.StaticFriction">
+  StaticFriction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Static Friction&quot;, EditorPropertyMode.Default)]
+public float StaticFriction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_StepOffset_" data-uid="HexaEngine.Components.Physics.CharacterController.StepOffset*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_StepOffset" data-uid="HexaEngine.Components.Physics.CharacterController.StepOffset">
+  StepOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Step Offset&quot;, EditorPropertyMode.Default)]
+public float StepOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_UpDirection_" data-uid="HexaEngine.Components.Physics.CharacterController.UpDirection*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_UpDirection" data-uid="HexaEngine.Components.Physics.CharacterController.UpDirection">
+  UpDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Vector3 UpDirection { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_VolumeGrowth_" data-uid="HexaEngine.Components.Physics.CharacterController.VolumeGrowth*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_VolumeGrowth" data-uid="HexaEngine.Components.Physics.CharacterController.VolumeGrowth">
+  VolumeGrowth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditorProperty(&quot;Volume Growth&quot;, EditorPropertyMode.Default)]
+public float VolumeGrowth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Awake_" data-uid="HexaEngine.Components.Physics.CharacterController.Awake*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Awake" data-uid="HexaEngine.Components.Physics.CharacterController.Awake">
+  Awake()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_CreateController_" data-uid="HexaEngine.Components.Physics.CharacterController.CreateController*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_CreateController_MagicPhysX_PxPhysics__MagicPhysX_PxScene__MagicPhysX_PxControllerManager__" data-uid="HexaEngine.Components.Physics.CharacterController.CreateController(MagicPhysX.PxPhysics*,MagicPhysX.PxScene*,MagicPhysX.PxControllerManager*)">
+  CreateController(PxPhysics*, PxScene*, PxControllerManager*)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateController(PxPhysics* physics, PxScene* scene, PxControllerManager* manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>physics</code> <span class="xref">PxPhysics</span>*</dt>
+    <dd></dd>
+    <dt><code>scene</code> <span class="xref">PxScene</span>*</dt>
+    <dd></dd>
+    <dt><code>manager</code> <span class="xref">PxControllerManager</span>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Destroy_" data-uid="HexaEngine.Components.Physics.CharacterController.Destroy*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Destroy" data-uid="HexaEngine.Components.Physics.CharacterController.Destroy">
+  Destroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_DestroyController_" data-uid="HexaEngine.Components.Physics.CharacterController.DestroyController*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_DestroyController" data-uid="HexaEngine.Components.Physics.CharacterController.DestroyController">
+  DestroyController()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyController()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_InvalidateCache_" data-uid="HexaEngine.Components.Physics.CharacterController.InvalidateCache*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_InvalidateCache" data-uid="HexaEngine.Components.Physics.CharacterController.InvalidateCache">
+  InvalidateCache()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_IsBox_" data-uid="HexaEngine.Components.Physics.CharacterController.IsBox*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_IsBox_HexaEngine_Components_Physics_CharacterController_" data-uid="HexaEngine.Components.Physics.CharacterController.IsBox(HexaEngine.Components.Physics.CharacterController)">
+  IsBox(CharacterController)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool IsBox(CharacterController controller)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controller</code> <a class="xref" href="HexaEngine.Components.Physics.CharacterController.html">CharacterController</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_IsCapsule_" data-uid="HexaEngine.Components.Physics.CharacterController.IsCapsule*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_IsCapsule_HexaEngine_Components_Physics_CharacterController_" data-uid="HexaEngine.Components.Physics.CharacterController.IsCapsule(HexaEngine.Components.Physics.CharacterController)">
+  IsCapsule(CharacterController)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool IsCapsule(CharacterController controller)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controller</code> <a class="xref" href="HexaEngine.Components.Physics.CharacterController.html">CharacterController</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Move_" data-uid="HexaEngine.Components.Physics.CharacterController.Move*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Move_System_Numerics_Vector3_System_Single_System_Single_" data-uid="HexaEngine.Components.Physics.CharacterController.Move(System.Numerics.Vector3,System.Single,System.Single)">
+  Move(Vector3, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(Vector3 displacement, float minDistance, float elapsedTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displacement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>minDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>elapsedTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Resize_" data-uid="HexaEngine.Components.Physics.CharacterController.Resize*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Resize_System_Single_" data-uid="HexaEngine.Components.Physics.CharacterController.Resize(System.Single)">
+  Resize(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resize(float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="HexaEngine_Components_Physics_CharacterController_Update_" data-uid="HexaEngine.Components.Physics.CharacterController.Update*"></a>
+
+  <h3 id="HexaEngine_Components_Physics_CharacterController_Update" data-uid="HexaEngine.Components.Physics.CharacterController.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/HexaEngine/HexaEngine/blob/main/HexaEngine/Components/Physics/CharacterController.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
